@@ -1,0 +1,6 @@
+principal_amount = int(input("How much is the principal amount? (in €)"))
+interest_rate = float(input("What is the nominal interest rate per year (in decimals)?"))
+number_compound = int(input("How many times per year is interest compounded?"))
+number_years = int(input("What is the number of years?"))
+final_amount=principal_amount*(1+(interest_rate/number_compound))**(number_compound*number_years)
+print("The final amount is €",final_amount)
