@@ -12,11 +12,11 @@ trip_time_walk_remaining=int(trip_time_walk_mins%60)
 trip_time_bike_remaining=int(trip_time_bike_mins%60)
 trip_time_car_remaining=int(trip_time_car_mins%60)
 
-additional_time_walk=
-additional_time_bike=
-additional_time_car=
+additional_time_walk=5
+additional_time_bike=10
+additional_time_car=8
 
 print("Your trip will take",
-      (trip_time_walk_hours), "hours and",(trip_time_walk_remaining), "minutes if you walk,",
-      (trip_time_bike_hours), "hours and",(trip_time_bike_remaining),"minutes if you go by bike, and",
-      (trip_time_car_hours), "hours and",(trip_time_car_remaining),"minutes if you take the car.")
+      (trip_time_walk_hours), "hours and",(trip_time_walk_remaining+additional_time_walk), "minutes if you walk,",
+      (trip_time_bike_hours), "hours and",(trip_time_bike_remaining+additional_time_bike),"minutes if you go by bike, and",
+      (trip_time_car_hours), "hours and",(trip_time_car_remaining+additional_time_car),"minutes if you take the car.")
